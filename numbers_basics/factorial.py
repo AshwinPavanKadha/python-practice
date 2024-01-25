@@ -14,13 +14,13 @@ else:
 
 
 def fact(a):
-if n==1 :
-    return n
-else: 
-    return (a*fact(a-1))
+    if n==1 :
+        return n
+    else: 
+        return (a*fact(a-1))
 n = int(input('enter number : \t'))
 if num<0 :
-    print('Sorry, factorial does not exits for negative numbers)
+    print('Sorry, factorial does not exits for negative numbers')
 elif n == 0:
     print('factorail is 1')
 else:
