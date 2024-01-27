@@ -22,18 +22,16 @@ Enter number:
 
 def collatz(num):
     if num%2==0:
-        print(f'{num//2}')
-        return num//2
-    if num%2!=0:
-        print((3*num)+1)
-        return (3*num)+1
-numb=int(input('enter number:'))
-test=0
-while test!=1:
-    test=collatz(numb)
-    if test%2==0:
-        print(f'{test//2}')
-    if test%2!=0:
-        print((3*test)+1)
+        return (num//2)
         
+    else:
+        return ((3*num)+1)
+
+n=int(input('Enter number: '))
+while True:
+    n=collatz(n)
+    print(n)
+
+    if n==1:
+        break
 
